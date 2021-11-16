@@ -2,11 +2,20 @@
 
 namespace TheQuiltingHouse
 {
-    class Program
+    public class QuiltingOrder
     {
-        static void Main(string[] args)
+        public string Fabric { get; }
+        public string Pattern { get; set; }
+        public string Size { get; set; }
+
+        public QuiltingOrder(string name, )
         {
-            Console.WriteLine("Hello World!");
+            this.Customer = name;
         }
+
+        public void QuiltOrder();
+
+        private var order = new QuiltingOrder("Collin");
+        Console.WriteLine($"Your order has been sent!");
     }
 }
